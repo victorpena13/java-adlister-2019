@@ -9,7 +9,6 @@ import java.io.PrintWriter;
 @WebServlet("/Hello")
 public class HelloWorldServlet extends HttpServlet {
 
-
     String message;
     protected void doGet(HttpServletRequest req,
                          HttpServletResponse res) throws ServletException, IOException {
