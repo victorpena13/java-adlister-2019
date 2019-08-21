@@ -64,7 +64,7 @@
             <li>${name}</li>
         </c:forEach>
     </ul>
-</nav>
+</nav>2
 
 
 
