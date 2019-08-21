@@ -8,14 +8,21 @@ import java.io.PrintWriter;
 
 @WebServlet("/Hello")
 public class HelloWorldServlet extends HttpServlet {
+
+
     String message;
     protected void doGet(HttpServletRequest req,
                          HttpServletResponse res) throws ServletException, IOException {
+        message = "Hello World!!";
+
+
         PrintWriter out = res.getWriter();
 
-        message = "Hello World!!";
         out.println("<h1>" + message + "</h1>");
 
     }
+
+
+
 
 }
