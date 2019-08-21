@@ -12,6 +12,7 @@
 
 
 
+
 <html>
 <head>
     <title>Title</title>
@@ -20,11 +21,12 @@
 
 
 
-<form method="POST" action="/register">
+<form method="POST" action="/profile.jsp">
     <label for="username">username</label>
     <input id="username" type="text" name="username" placeholder="username"><br>
     <label for="password">password</label>
-    <input id="password" type="password" name="password" placeholder="password">
+    <input id="password" type="password" name="password" placeholder="password"><br>
+    <button type="submit">Submit the form</button>
 </form>
 
 
