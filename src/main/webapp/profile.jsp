@@ -11,9 +11,14 @@
 
 <html>
 <head>
-    <title>Title</title>
 </head>
+<%--<link rel="stylesheet" href="css/style.css">--%>
+<%--<link rel="stylesheet" href="css/kids.css">--%>
+<jsp:include page="/partials/header.jsp">
+    <jsp:param name = "isKid" value="true"/>
+</jsp:include>
 <body>
+<%@ include file="/partials/navbar.jsp" %>
 
 
 <h1>profile page user: <%= request.getParameter("nameuser") %>!</h1>

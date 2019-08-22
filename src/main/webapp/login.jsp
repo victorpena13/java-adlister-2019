@@ -16,32 +16,37 @@
 <html>
 <head>
     <title>Title</title>
+    <%@ include file="/partials/header.jsp"%>
+<%--    <link rel="stylesheet" href="css/style.css">--%>
+<%--    <link rel="stylesheet" href="css/kids.css">--%>
 </head>
 <body>
-<c:choose>
-    <c:when test="${param.username == 'admin' and param.password == 'password'}">
-        <c:redirect url="profile.jsp"></c:redirect>
-    </c:when>
-    <c:otherwise>
-        <form method="POST" action="/login.jsp">
-            <label for="username">username</label>
-            <input id="username" type="text" name="username" placeholder="username"><br>
-            <label for="password">password</label>
-            <input id="password" type="password" name="password" placeholder="password"><br>
-            <button type="submit">Submit the form</button>
-        </form>
-    </c:otherwise>
-</c:choose>
+
+<%@ include file="/partials/navbar.jsp" %>
+
+<%--<c:choose>--%>
+<%--    <c:when test="${param.username == 'admin' and param.password == 'password'}">--%>
+<%--        <c:redirect url="profile.jsp"></c:redirect>--%>
+<%--    </c:when>--%>
+<%--    <c:otherwise>--%>
+<%--        <form method="POST" action="/login.jsp">--%>
+<%--            <label for="username">username</label>--%>
+<%--            <input id="username" type="text" name="username" placeholder="username"><br>--%>
+<%--            <label for="password">password</label>--%>
+<%--            <input id="password" type="password" name="password" placeholder="password"><br>--%>
+<%--            <button type="submit">Submit the form</button>--%>
+<%--        </form>--%>
+<%--    </c:otherwise>--%>
+<%--</c:choose>--%>
 
 
-
-<%--<form method="POST" action="/login">--%>
-<%--    <label for="username">username</label>--%>
-<%--    <input id="username" type="text" name="username" placeholder="username"><br>--%>
-<%--    <label for="password">password</label>--%>
-<%--    <input id="password" type="password" name="password" placeholder="password"><br>--%>
-<%--    <button type="submit">Submit the form</button>--%>
-<%--</form>--%>
+<form method="POST" action="/login">
+    <label for="username">username</label>
+    <input id="username" type="text" name="username" placeholder="username"><br>
+    <label for="password">password</label>
+    <input id="password" type="password" name="password" placeholder="password"><br>
+    <button type="submit">Submit the form</button>
+</form>
 
 
 
