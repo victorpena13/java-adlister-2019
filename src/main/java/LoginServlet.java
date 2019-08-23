@@ -21,5 +21,15 @@ public class LoginServlet extends HttpServlet {
         } else {
             response.sendRedirect("/login");
         }
+
+        if (isUser) {
+            request.getSession().setAttribute("isUser", true);
+        }
+
+
     }
 }
+
+
+//    In your LoginServlet, when a user successfully logs in, set a key named "user" in the session
+
