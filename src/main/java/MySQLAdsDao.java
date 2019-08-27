@@ -10,12 +10,12 @@ public class MySQLAdsDao implements Ads {
 
 
 
-    public MySQLAdsDao(Config config) throws SQLException {
+    public MySQLAdsDao() throws SQLException {
         DriverManager.registerDriver(new Driver());
         connection = DriverManager.getConnection(
-                config.getUrl(),
-                config.getUser(),
-                config.getPassword()
+                Config.getUrl(),
+                Config.getUser(),
+                Config.getPassword()
         );
     }
 
